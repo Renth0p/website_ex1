@@ -1,0 +1,44 @@
+body {
+    margin:0;
+    padding:0;
+}
+p {
+    color:#c2c2c2;
+    font-family:Montserrat;
+    font-weight:500;
+    font-size:15px;
+    padding:0;margin:0;
+}
+h1 {
+    color:#c2c2c2;
+    font-family:Montserrat;
+    font-weight:900;
+    font-size:35px;
+    padding:0;
+    margin:0;
+}
+a {
+    color:#8421c1;
+    font-family:Montserrat;
+    text-decoration:none;
+}
+.link {
+    font-weight:400;
+    font-style:italic;
+}
+a:hover {color:#c44242}
+a:active {color:#a73e3e}
+
+/* Scrollbar */
+::-webkit-scrollbar {width:12px;}
+::-webkit-scrollbar-track {background:#f1f1f1;}
+::-webkit-scrollbar-thumb {background:rgb(184, 184, 184);}
+::-webkit-scrollbar-thumb:hover {background:rgb(150, 150, 150);}
+::-webkit-scrollbar-thumb:active {background:rgb(126, 126, 126);}
+
+
+/*
+div { outline:1px solid red }
+p { outline:1px solid red }
+h1 { outline:1px solid red }
+*/

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<head>
+ <title>Military-Roleplay Server | Home</title>
+ <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="textblock.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css'>
+
+<link rel="shortcut icon" href="mrs.ico" type="image/x-icon">
+<meta name="author" content="MRS Server">
+<meta name="description" content="Official Website">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+<script>new WOW().init()</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<body style="background-color:#002137;">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap" rel="stylesheet">
+
+<style>
+	::-webkit-scrollbar {width:12px;}
+    ::-webkit-scrollbar-track {background:#f1f1f1;}
+    ::-webkit-scrollbar-thumb {background:rgb(184, 184, 184);}
+    ::-webkit-scrollbar-thumb:hover {background:rgb(150, 150, 150);}
+    ::-webkit-scrollbar-thumb:active {background:rgb(126, 126, 126);}
+    /* Header */
+    .buttontop {
+        opacity:1;
+        width:50px;
+        height:50px;
+        transform:translateX(0) rotate(0deg);
+        transition:all .3s ease;
+        position:absolute;
+    }
+    .buttonbottom {
+        opacity:0;
+        width:50px;
+        height:50px;
+        transform:translateX(0) rotate(0deg);
+        transition:all .3s ease;
+        position:absolute;
+    }
+    .buttondiv {
+        right:0px;
+        top:20px;
+        float:right;
+        padding-right:70px;
+        position:relative;
+        cursor:pointer;
+    }
+
+    /* Side Nav */
+    .sidenav {
+        text-align:left;
+        background-color:rgba(255, 255, 255, 0.918);
+        height:100%;
+        width:250px;
+        top:0;
+        right:-250px;
+        transition:0.5s;
+        z-index:9999;
+        overflow:hidden;
+        position:fixed;
+        overflow-y:auto;
+        height:100%;
+    }
+    .sidenav h1 {
+        color:black;
+        font-family:Montserrat;
+        font-weight:500;
+        font-size:15px;
+        padding-left:15px;
+        margin:0;
+    }
+    .sidenav a {
+        color:black;
+        line-height:0px;
+        font-family:Montserrat;
+        font-weight:400;
+        font-size:15px;
+        font-style:normal;
+        float:left;
+        text-decoration:none;
+        padding-bottom:8px;
+        padding-left:10px;
+        transition:0.3s;
+    }
+    .sidenav a:hover {
+        color:rgb(97, 97, 97);
+        font-style:italic;
+        transition:0.5s;
+    }
+    .sidenav table {
+        overflow:hidden;
+        padding-left:15px;
+        padding-top:10px;
+
+    }
+    .sidenav img {
+        padding-bottom:8px;
+        width:25px;
+    }
+</style>
+
+    <div style="text-align:left;width:100%;height:70px;position:absolute;background-color:rgba(0, 0, 0, 0);z-index:99999">
+        <a href="index.html">
+        </a>
+        <div id="buttondiv" class="buttondiv">
+            <img id="buttonbottom" class="buttonbottom" src="img\menuclose.png">
+            <img id="buttontop" class="buttontop" onclick="buttonFunction()" src="img\menuopenpup.png">
+        </div>
+    </div>
+
+    <script>
+        function buttonFunction() {
+            if (document.getElementById("buttontop").style.opacity == "0") {
+                document.getElementById("buttontop").style.opacity = "1";
+                document.getElementById("buttontop").style.transform = "translateX(0) rotate(360deg)";
+
+                document.getElementById("buttonbottom").style.opacity = "0";
+                document.getElementById("buttonbottom").style.transform = "translateX(0) rotate(360deg)";
+
+                document.getElementById("sidenav").style.right = "-250px";
+                document.getElementById("buttondiv").style.position  = "relative";
+            } else {
+                document.getElementById("buttontop").style.opacity = "0";
+                document.getElementById("buttontop").style.transform = "translateX(0) rotate(-360deg)";
+
+                document.getElementById("buttonbottom").style.opacity = "1";
+                document.getElementById("buttonbottom").style.transform = "translateX(0) rotate(-360deg)";
+
+                document.getElementById("sidenav").style.right = "0px";
+                document.getElementById("buttondiv").style.position  = "fixed";
+                document.getElementById("buttondiv").style.right = "0px";
+            }
+        }
+    </script>
+
+    <div id="sidenav" class="sidenav">
+        <h1 style="padding-top:80px">Основное</h1>
+
+        <table style="width:250px;table-layout:fixed;">
+            <tbody>
+                <tr>
+                    <td style="width:25px;"><img src="img\rocket2.png"></td>
+                    <td><a href="index.htm">Домой</a></td>
+                </tr>
+                <tr>
+                    <td style="width:25px;"><img src="img\help.png"></td>
+                    <td><a href="servers.html">Сервера</a></td>
+                </tr>
+                <tr>
+                    <td style="width:25px;"><img src="img\whatsapp.png"></td>
+                    <td><a href="https://vk.com/club187485365" target="_blank">Вк группа</a></td>
+                </tr>
+                <tr>
+                    <td style="width:25px;"><img src="img\teamspeak.png"></td>
+                    <td><a href="ts3server://mrs.tswp.ru" target="_blank">TEAMSPEAK</a></td>
+                </tr>
+                <tr>
+                    <td style="width:25px;"><img src="img\discord.png"></td>
+                    <td><a href="https://discord.gg/jEjFWbm" target="_blank">Дискорд</a></td>
+                </tr>
+                <tr>
+                    <td style="width:25px;"><img src="img\steam.png"></td>
+                    <td><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2008569714" target="_blank">Стим Коллекция</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="padding-top:15px">Другое</h1>
+
+        <table style="width:250px;table-layout:fixed;">
+          <tbody>
+            <tr>
+                    <td style="width:25px;"><img src="img\screenshot.png"></td>
+                    <td><a href="https://vk.com/club187485365?z=album-187485365_267776972" target="_blank">Скриншоты с сервера</a></td>
+            </tr>
+            <tr>
+                    <td style="width:25px;"><img src="img\monitoring.png"></td>
+                    <td><a href="https://vk.com/club187485365?z=album-187485365_267776972" target="_blank">Мониторинг Сервера 1</a></td>
+            </tr>
+            <tr>
+                    <td style="width:25px;"><img src="img\monitoring.png"></td>
+                    <td><a href="https://vk.com/club187485365?z=album-187485365_267776972" target="_blank">Мониторинг Сервера 2</a></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+        <div class="parallaxContainer">
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="layer layer4"></div>
+            <div class="layer layer5"></div>
+            <div class="fixed"></div>
+        </div>
+
+        <script src="parallax\parallax.js"></script>
+        <link rel="stylesheet" type="text/css" href="dayz\parallax.css">
+
+    <div class="container">
+        <br>
+        <div class="sidebysidecontainer">
+            <div class="sidebysideimg">
+                <img style="" src="img\vest.png">
+            </div>
+            <div class="wow fadeInLeft">
+                <h1>Кто же мы?</h1>
+                <p>Military-Roleplay server - это игровое сообщество, которое стремится к сплочённой и дружелюбной игре.</p>
+                <br>
+                <p>В то время как основная игра, на которой сосредоточено наше сообщество - это ArmA, MRS - это больше, чем просто группа ArmA, и мы играем и предлагаем многие другие игры.</p>
+            </div>
+        </div>
+
+        </br><br>
+
+        <div class="sidebysidecontainer">
+            <div class="sidebysideimg" style="order:1">
+                <img style="" src="img\weapon.png">
+            </div>
+            <div class="wow fadeInRight">
+                <h1>Что мы реализуем на сервере?</h1>
+                <p>Хотя мы в определенной степени наслаждаемся реализмом, мы не позволяем этим аспектам помешать нашей главной цели: получить удовольствие и захватывающий опыт командной игры.</p>
+                <br>
+                <p>В основном мы проводим сессии в ArmA 3, мы не привязаны ни к одной конкретной фракции или временному промежутку, и мы принимаем широкий спектр предложений по поводу следующих компаний.</p>
+            </div>
+        </div>
+        </br><br>
+
+        <div style="position: relative;width: 100%;height: 0;padding-bottom: 56.25%;margin:0 auto">
+            <iframe width="800" height="420" src="https://www.youtube.com/embed/NhlqR3bqBWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+        </div>
+        </br><br>
+        <p style="text-align:center">Игры позиционируются как Immersiv Milsim (С эффектом присутствия),  для тех, кто не знаком с аспектами этой категории у нас есть система обучения,
+с помощью которой вы сможете познать азы или узнать что-то новое, также вас обучат командному взаимодействию, что позволит вам быстро освоится на сервере. Если вы ищете группу ArmA, которая не является «Milsim», но при этом делает упор на командную работу и координацию, мы рекомендуем Вам проверить нас.</p>
+        </br>
+    </div>
+
+
+    <style>
+    .advert {
+        background-color:#002137;
+        width:100%;
+        overflow:hidden;
+        text-align:center;
+    }
+    .advert p {
+        color:white;
+        font-weight:500;
+        font-size:22px;
+        text-align:center;
+    }
+    .sendbutton {
+        font-family:Montserrat;
+        font-weight:900;
+        font-size:20px;
+        margin-top:10px;
+        border-style:solid;
+        border-width:2px;
+        border-radius:12px;
+        border-color:rgb(255, 255, 255);
+        color:white;
+        background-color:#ffffff00;
+        width:320px;
+        height:50px;;
+        transition:0.15s;
+        cursor:pointer;
+    }
+    .sendbutton:hover {
+        font-style:italic;
+        color:#351010;
+        background-color:rgb(255, 255, 255);
+    }
+</style>
+
+</div>
+    <br>
+
+    <style>
+        .svcontainer {
+            height:80px;
+            background-color:#F1F1F1;
+            display:flex;
+            align-items:center;
+            border-radius:6px;
+            overflow:hidden;
+            border-bottom: 3px solid #EFEFEF;
+        }
+        .svtitle {font-size:20px;color:black;}
+        .svtitle a {font-weight:600}
+        .svdescrip {font-size:15px;color:black;}
+        .svblur {filter: blur(2px);-webkit-filter: blur(2px);opacity:0.5}
+        .svimg {width:90px;text-align:center;flex-shrink:0}
+        .svoffline {
+            z-index:9999;
+            position:absolute;
+            color:red;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            opacity:0.75;
+            font-style:italic;
+        }
+        @media screen and (max-width: 800px) {
+            .svtitle {font-size:12px;}
+            .svdescrip {font-size:12px;}
+            .svimg {width:70px;}
+        }
+    </style>
+
+<div class="container">
+            <div class="svcontainer wow fadeInUp">
+
+        <div class="svcontainer        ">
+            <div class="svimg">
+                <img style="width:70%" src="img\teamspeak.png">
+            </div>
+            <div style="padding:5px;">
+                <h1 class="svtitle">TeamSpeak</h1>
+                <p class="svdescrip"><b>Адрес:</b> mrs.tswp.ru | <b>Локация:</b> Russia<b> | Онлайн:</b> 0/32</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $.getJSON('https://teamspeak-servers.org/api/?object=servers&element=detail&key=8JAZwRfBuyCUMgG96nd2B4cjKtRc5QBnPzt', function(data) {
+        console.log(data);
+    });
+</script>
+
+    <br>
+            <div class="svcontainer wow fadeInUp">
+
+        <div class="svcontainer">
+            <div class="svimg">
+                <img style="width:70%" src="img\arma3.png">
+            </div>
+            <div style="padding:5px;">
+                <h1 class="svtitle">MRS Server Arma 3</h1>
+                <p class="svdescrip"><b>Адрес:</b> 89.22.150.168:2102</p>
+            </div>
+        </div>
+    </div>
+    </br>
+
+<style>
+.footar {
+    bottom:0px;
+    width:100%;
+    overflow:hidden
+}
+.footar p {
+    font-family:Montserrat;
+    font-weight:400;
+    line-height:0;
+    color:black;
+    font-size:12px;
+}
+.footar a {
+    color:#808000;
+    font-size:12px;
+}
+.footarlogo {
+    float:left;
+    height:48px;
+    padding-top:25px;
+    padding-left:35px;
+    padding-bottom:20px;
+}
+.footartext {
+    float:right;
+    padding-top:50px;
+    padding-right:55px;
+    padding-bottom:35px;
+}
+@media screen and (max-width:500px) {
+    .footarlogo {
+        width:100%;
+        text-align:center;
+        padding-left:0px;
+    }
+    .footartext {
+        width:100%;
+        text-align:center;
+        padding:0px;
+        padding-bottom:25px;
+    }
+}
+</style>
+
+<div class="advert">
+    <br>
+    </br>
+    <br>
+    <div class="wow fadeInUp">
+        <p>Присоединяйся к нам!</p>
+        <a href=" https://discord.gg/pz7fnrv">
+            <input class="sendbutton" type="submit" value="Присоединиться">
+        </a>
+    </div>
+    </br>
+    <br>
+    </br>
+</div>
+
+<style>
+    .footar {
+        bottom:0px;
+        width:100%;
+        overflow:hidden
+    }
+    .footar p {
+        font-family:Montserrat;
+        font-weight:400;
+        line-height:0;
+        color:white;
+        font-size:12px;
+    }
+    .footar a {
+        color:#808000;
+        font-size:12px;
+    }
+    .footarlogo {
+        float:left;
+        height:48px;
+        padding-top:25px;
+        padding-left:35px;
+        padding-bottom:20px;
+    }
+    .footartext {
+        float:right;
+        padding-top:10px;
+        padding-right:25px;
+        padding-bottom:35px;
+    }
+    @media screen and (max-width:500px) {
+        .footarlogo {
+            width:100%;
+            text-align:center;
+            padding-left:0px;
+        }
+        .footartext {
+            width:100%;
+            text-align:center;
+            padding:0px;
+            padding-bottom:10px;
+        }
+    }
+
+</style>
+    <div class="footartext">
+        <p>
+            Official Website
+            <a class="link" href="https://discord.gg/pz7fnrv" target="_blank">MRS Server</a>
+            , 2019-2020
+        </p>
+    </div>
+</div></body>
